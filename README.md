@@ -1,4 +1,4 @@
-# unidroid-template-groot17
+# template-groot17
 
 Submission template for the `groot17` brain (GR00T N1.7 VLA). It is not tied to a task: it serves any GR00T N1.7 checkpoint. The reference code loads the released `nvidia/GR00T-N1.7-DROID` checkpoint. Copy your trained weights into `weights/` and submit.
 
