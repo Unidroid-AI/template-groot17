@@ -1,6 +1,6 @@
 # unidroid-template-groot17
 
-Submission template for the `groot17` brain on the Franka tabletop task. It runs the released `nvidia/GR00T-N1.7-DROID` checkpoint. Copy your trained weights into `weights/` and submit.
+Submission template for the `groot17` brain (GR00T N1.7 VLA). It is not tied to a task: it serves any GR00T N1.7 checkpoint. The reference code loads the released `nvidia/GR00T-N1.7-DROID` checkpoint. Copy your trained weights into `weights/` and submit.
 
 ## Quickstart
 
@@ -38,6 +38,6 @@ Everything except the file layout that `udcli submission check` enforces.
 
 `agent.yaml` sets `embodiment_tag` to `OXE_DROID_RELATIVE_EEF_RELATIVE_JOINT`.
 
-The policy reads the tabletop cameras, joints, gripper, and end-effector pose, and turns the model's relative joint delta plus absolute gripper into this task's 8-D joint command. Loading the checkpoint requires the GR00T N1.7 runtime from the brain image.
+The reference policy reads the cameras, joints, gripper, and end-effector pose, and turns the model's relative joint delta plus absolute gripper into an 8-D joint command. The embodiment tag, camera names and action layout are robot-specific; change them in `agent.yaml` and `brain/adapt.py` for your robot and task. Loading the checkpoint requires the GR00T N1.7 runtime from the brain image.
 
 The released checkpoint is at `https://huggingface.co/nvidia/GR00T-N1.7-DROID`. Do not leave small Git placeholder files in `weights/`; `scripts/fetch_weights.sh` replaces them.

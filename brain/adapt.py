@@ -3,7 +3,7 @@
 #
 # SPDX-License-Identifier: BSD-3-Clause
 
-"""Map tabletop observations to a GR00T N1.7 policy and back to absolute joints."""
+"""Map observations to a GR00T N1.7 policy and back to absolute joints."""
 
 from __future__ import annotations
 

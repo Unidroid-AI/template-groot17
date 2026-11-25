@@ -3,12 +3,12 @@
 #
 # SPDX-License-Identifier: BSD-3-Clause
 
-"""GR00T N1.7 DROID brain for the Franka tabletop task.
+"""GR00T N1.7 DROID brain reference implementation.
 
 ``weights/`` is the released ``nvidia/GR00T-N1.7-DROID`` checkpoint.
 ``embodiment_tag`` selects that checkpoint's relative end-effector plus
 relative joint head. The policy decodes that head against the state it is given, so
-its joint output is already absolute. It is used as this task's 8-D command with the
+its joint output is already absolute. It is used as an 8-D command with the
 gripper as 0 open or 1 closed.
 """
 
@@ -79,7 +79,7 @@ def _load_policy(weights_dir: Path, embodiment_tag: str | None, device: str):
 def _freeze(policy) -> None:
     """Eval mode, no autograd graph. A compiled graph is not kept.
 
-    ``torch.compile`` specializes on the instruction length. Each tabletop task
+    ``torch.compile`` specializes on the instruction length. Each task
     is a new length, and every specialization stays resident for the life of
     the process. Eager inference has one working set.
     """
