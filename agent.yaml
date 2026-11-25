@@ -1,0 +1,26 @@
+entry: policy:Gr00tN17Brain
+horizon: 8
+action_dim: 8
+embodiment_tag: OXE_DROID_RELATIVE_EEF_RELATIVE_JOINT
+max_gpu_mem_gb: 32
+# The policy reads these two cameras only. The simulator skips the rest.
+observation:
+  cameras: cam_exterior_left,cam_wrist
+parent_submission: null
+weights:
+  config.json: b20d22636bdaf49436de49c5e7e5fc65203f7a4b88384eef426000100be57d1e
+  embodiment_id.json: c81282ca2f434fd6b92e16c7e0ac6ebcb9e9bd63f856deaae93780df6c86e4d7
+  experiment_cfg/conf.yaml: c371816eb0d0f55055125a0bf8bec2928b6953fc3869fe82ca31d0952f4265e3
+  experiment_cfg/config.yaml: fae5fbb0cf175c9ce49914b3acd2afb6307fdc496ae8195cae1304a78944b9d0
+  experiment_cfg/dataset_statistics.json: 8cee78ee55e3e53b400c66ff49bcc9cdece23a73fa70bc5c65a6b1d62d82aea4
+  latest: 64226c61662c93332dca36939eb03ae9dd499d727ccdb2a626fb0b941e05466c
+  model-00001-of-00002.safetensors: 68d885c9684bb7d4781389873e4b7d33202b5618e70a83f2e78187a5fb839202
+  model-00002-of-00002.safetensors: aa4c6e553ea8454500354352368bcbb7e4f0fb32a9816b20d5b25c231f13a8fd
+  model-architecture.png: bbf161c66daac88799b5bc7b5c110429f48d7f96ae315113e2b2e6d1f11c9e54
+  model.safetensors.index.json: 407804ea5a62f4f8823f48811ae0edbb82fac101e9cf4d7273e6e2f692bb4d59
+  processor_config.json: 4b5c3bab3f148ff47ba903714c3247403c754f806ff2354a73acdfa2102a66fb
+  README.md: 33956fc189a30cde8b8abe7a5ca0e5b21e22d2da7882af4840eef20e799b2b2a
+  scheduler.pt: 0e68cd5c0983910f321ec0ab989e4ea8c30670cfdbd27cf252aeb2b95587256c
+  statistics.json: 127832f7df25cda15da4ba6be81737f96b65673d0f892f9fc1bce1bc062fa858
+  SUCCESS: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+  training_args.bin: 8d636db8bb639e87538810ab7d76176a6a334d903728dd0bd0b3d2358f668e1b

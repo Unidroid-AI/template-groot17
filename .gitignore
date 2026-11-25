@@ -1,0 +1,18 @@
+# Python
+**/__pycache__/
+**/*.py[cod]
+**/*.egg-info/
+**/.pytest_cache/
+**/.mypy_cache/
+**/.ruff_cache/
+
+# OS and editors
+.DS_Store
+Thumbs.db
+**/.idea/
+**/.vscode/
+
+# Checkpoint. Download into weights/ with scripts/fetch_weights.sh; see README.md.
+weights/*
+# Hugging Face download cache. Non-dot files here fail the weight hash check.
+weights/.cache/
